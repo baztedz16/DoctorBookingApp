@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IR3 HSCP</string>
+
+    <string name="register">Do not have an account? <b>Register instead</b></string>
+    <string name="privacy_policy">Privacy and Policy</string>
+    <string name="terms_conditions"><u>Terms and Conditions</u></string>
+    <string name="account">Already have an account? <b>Sign in</b></string>
+    <string name="contact">Problem with transaction? <b>Contact Us</b></string>
+</resources>

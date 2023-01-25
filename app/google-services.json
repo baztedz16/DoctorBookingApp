@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "631747200504",
+    "firebase_url": "https://doctors-booking-application-default-rtdb.firebaseio.com",
+    "project_id": "doctors-booking-application",
+    "storage_bucket": "doctors-booking-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631747200504:android:dfdc7042860e71893a820d",
+        "android_client_info": {
+          "package_name": "com.example.doctorbookingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631747200504-bpoaqi4ksdumetn3qv698at4ohhunpcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.doctorbookingapp",
+            "certificate_hash": "a2ca3dc5264083565ee5e2865dde48851f5d5452"
+          }
+        },
+        {
+          "client_id": "631747200504-bk7fqi5ju1go15kri725ikk5vckt0ntr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlAB7JsZGe9JP-Zse49sKmlEfafr_Bd90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631747200504-bk7fqi5ju1go15kri725ikk5vckt0ntr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

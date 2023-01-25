@@ -1,0 +1,93 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rectangle_background"
+    android:elevation="15sp"
+    android:fitsSystemWindows="true"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/usernameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Dr. Juan Dela Cruz"
+            android:textColor="@color/dark_800"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/hospitalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:drawableStart="@drawable/ic_home"
+            android:drawablePadding="10sp"
+            android:text="Urologist, IR3 Hospital Solutions Consultancy And Pharmaceuticals"
+            android:textColor="@color/dark_800"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/locationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="10sp"
+            android:gravity="start"
+            android:text="2 Zabarte Sr. Ave, Novaliches, Quezon City, Metro Manila"
+            android:textColor="@color/dark_800"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:drawableStart="@drawable/ic_clock_white"
+            android:drawablePadding="10sp"
+            android:gravity="center"
+            android:text="Available from 7:30 A.M to 10:30 P.M"
+            android:textColor="@color/dark_800"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/amountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:drawableStart="@drawable/ic_cash_white"
+            android:drawablePadding="10sp"
+            android:drawableTint="@color/dark_700"
+            android:gravity="center"
+            android:text="Amount: 250.00 Pesos"
+            android:textColor="@color/dark_800"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bookBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape_button_sign_in"
+            android:text="Book"
+            android:textAllCaps="false"
+            android:textColor="@color/light_blue"
+            app:backgroundTint="@color/dark_900" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity_Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Connect and Consult"
+            android:textColor="@color/light_blue"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="230sp"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:src="@drawable/logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/emailTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp">
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edit_text"
+                android:drawableStart="@drawable/ic_email_white"
+                android:drawablePadding="15dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/passwordTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_marginTop="5dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edit_text"
+                android:drawableStart="@drawable/ic_password_white"
+                android:drawablePadding="15dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgotTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Forgot Password?"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/light_blue"
+            android:tooltipText="Forgot Password" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape_button_sign_in"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:textColor="@color/light_blue"
+            android:tooltipText="Login"
+            app:backgroundTint="@color/dark_900" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noAccountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@color/light_blue"
+        android:tooltipText="Register" />
+
+
+</RelativeLayout>

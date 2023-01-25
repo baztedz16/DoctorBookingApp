@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity_EditProfile">
+
+    <RelativeLayout
+        android:id="@+id/toolBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_back_white" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBarRl"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:text="Profile Settings"
+            android:textColor="@color/dark_800"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_email_white"
+            android:drawablePadding="15dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/curpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_password_white"
+            android:drawablePadding="15dp"
+            android:hint="Current Password"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/pass2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_password_white"
+            android:drawablePadding="15dp"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/pass3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape_edit_text"
+            android:drawableStart="@drawable/ic_password_white"
+            android:drawablePadding="15dp"
+            android:hint="Re-type Password"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/shape_button_sign_in"
+            android:text="Update Profile"
+            android:textAllCaps="true"
+            android:textColor="@color/light_blue"
+            app:backgroundTint="@color/dark_900" />
+    </LinearLayout>
+
+</RelativeLayout>

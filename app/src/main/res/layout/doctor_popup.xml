@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="5sp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_logo" />
+
+    <TextView
+        android:id="@+id/DoctorsName"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Juan Dela Cruz"
+        android:textAlignment="center"
+        android:textColor="@color/dark_700"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/cardL"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DoctorsName"
+        android:layout_alignTop="@+id/DoctorsName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:id="@+id/sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="juandelacruz@gmail.com"
+                android:textAlignment="center"
+                android:textColor="@color/dark_700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="EMAIL"
+                android:textAlignment="center"
+                android:textColor="@color/dark_700"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardL"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/okay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:text="Okay"
+            android:textColor="#3F51B5"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cancel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/okay_text"
+            android:text="Cancel"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

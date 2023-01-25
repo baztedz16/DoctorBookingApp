@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity_PatientProfile">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar">
+
+        <TextView
+            android:id="@+id/clientProfileTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Patient's Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_back_white" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileTv"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@id/toolBarRl"
+        android:layout_centerInParent="true"
+        android:layout_margin="10sp"
+        android:background="@color/white"
+        android:elevation="5sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_person_dark"
+        app:shapeAppearance="@style/styleCircleImage" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/informationCv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBarRl"
+        android:layout_marginTop="50sp"
+        android:elevation="5sp"
+        app:cardBackgroundColor="@color/white">
+
+        <ImageButton
+            android:id="@+id/settingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10sp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_settings"
+            android:tooltipText="Settings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:text="Matthew Franco Yusi Órdenes"
+                android:textColor="@color/dark_800"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/locationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:drawableStart="@drawable/ic_location_red"
+                android:drawablePadding="10sp"
+                android:text="938 Aurora Blvd, Cubao, Quezon City, 1109 Metro Manila"
+                android:textColor="@color/dark_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:drawableStart="@drawable/ic_email_blue"
+                android:drawablePadding="10sp"
+                android:inputType="textEmailAddress"
+                android:text="matthew123@gmail.com"
+                android:textColor="@color/dark_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/contactNumberTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:drawableStart="@drawable/ic_contact"
+                android:drawablePadding="10sp"
+                android:inputType="number"
+                android:text="(02) 8911 0964"
+                android:textColor="@color/dark_800"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/informationCv"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10sp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:drawableStart="@drawable/ic_wallet_white"
+                    android:drawablePadding="10sp"
+                    android:drawableTint="#FF5722"
+                    android:text="Wallet"
+                    android:textColor="@color/dark_800"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/currentBalanceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:drawablePadding="10sp"
+                        android:text="Balance: ₱0"
+                        android:textColor="@color/dark_800"
+                        android:textSize="16sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cashInCv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5sp"
+                        app:cardCornerRadius="25sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:drawableEnd="@drawable/ic_cash_in"
+                            android:drawablePadding="10sp"
+                            android:drawableTint="#03A9F4"
+                            android:text="Cash In"
+                            android:textColor="@color/dark_800"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:layout_below="@id/informationCv"
+                android:layout_margin="10sp"
+                android:elevation="15sp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:drawableStart="@drawable/ic_history_white"
+                    android:drawablePadding="10sp"
+                    android:drawableTint="#FF5722"
+                    android:text="Activity history"
+                    android:textColor="@color/dark_800"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/appointmentRv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginTop="50sp"
+                            android:layout_marginEnd="10sp"
+                            android:layout_marginBottom="10sp"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/row_patient_history" />
+
+                    </ScrollView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

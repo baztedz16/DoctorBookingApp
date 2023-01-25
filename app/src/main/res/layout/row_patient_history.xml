@@ -1,0 +1,44 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rectangle_background"
+    android:elevation="15sp"
+    android:fitsSystemWindows="true"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hospitalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:drawableStart="@drawable/ic_home"
+            android:drawablePadding="10sp"
+            android:text="You've set an Appointment to Dr. Juan Dela cruz"
+            android:textColor="@color/dark_800"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:drawableStart="@drawable/ic_clock_white"
+            android:drawablePadding="10sp"
+            android:text="MONDAY 7:30 A.M to 10:30 P.M"
+            android:textColor="@color/dark_800"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity_DoctorProfile">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar">
+
+        <TextView
+            android:id="@+id/doctorProfileTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Doctor's Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_back_white" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileTv"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@id/toolBarRl"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
+        android:background="@color/white"
+        android:elevation="5sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_person_dark"
+        app:shapeAppearance="@style/styleCircleImage" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/informationCv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBarRl"
+        android:layout_marginTop="50sp"
+        android:elevation="5sp"
+        app:cardBackgroundColor="@color/white">
+
+        <ImageButton
+            android:id="@+id/settingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10sp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_settings"
+            android:tooltipText="Settings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:text="Dr. Juan Dela Cruz"
+                android:textColor="@color/dark_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/specialtyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:drawableStart="@drawable/ic_badge_white"
+                android:drawablePadding="10sp"
+                android:drawableTint="@color/light_yellow"
+                android:text="Urologist"
+                android:textColor="@color/dark_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:drawableStart="@drawable/ic_email_blue"
+                android:drawablePadding="10sp"
+                android:text="juandelacruz123@gmail.com"
+                android:textColor="@color/dark_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/contactNumberTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:drawableStart="@drawable/ic_contact"
+                android:drawablePadding="10sp"
+                android:text="(02) 8631 9213"
+                android:textColor="@color/dark_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/statusTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginBottom="20sp"
+                android:drawableStart="@drawable/ic_verified_white"
+                android:drawablePadding="10sp"
+                android:drawableTint="#3F51B5"
+                android:text="Verified"
+                android:textColor="@color/dark_800"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/informationCv">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/locationCv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/informationCv"
+                    android:layout_margin="10sp"
+                    android:elevation="15sp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/hospitalTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:drawableStart="@drawable/ic_home"
+                            android:drawablePadding="10sp"
+                            android:text="IR3 Hospital Solutions Consultancy and Pharmaceuticals Inc."
+                            android:textColor="@color/dark_800"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/locationTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:drawableStart="@drawable/ic_location"
+                            android:drawablePadding="10sp"
+                            android:text="2 Zabarte Sr. Ave, Novaliches, Quezon City, Metro Manila"
+                            android:textColor="@color/dark_800"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/reviewsCv"
+                    android:layout_width="match_parent"
+                    android:layout_height="400sp"
+                    android:layout_margin="10sp"
+                    android:elevation="15sp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10sp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:drawableStart="@drawable/ic_comment"
+                            android:drawablePadding="10sp"
+                            android:text="Reviews"
+                            android:textColor="@color/dark_800"
+                            android:textSize="16sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/reviewsRv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/row_submitted_reviews" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

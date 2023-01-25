@@ -1,0 +1,59 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rectangle_background"
+    android:elevation="15sp"
+    android:fitsSystemWindows="true"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/patientTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:drawableStart="@drawable/ic_person_white"
+            android:drawablePadding="10sp"
+            android:drawableTint="@color/dark_700"
+            android:text="Patient: Juan Dela Cruz"
+            android:textColor="@color/dark_800"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/reviewTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:drawableStart="@drawable/ic_calendar_white"
+            android:drawablePadding="10sp"
+            android:drawableTint="@color/light_blue"
+            android:text="Review: Good Doctor and Understandable"
+            android:textColor="@color/dark_800"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ratingTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:drawableStart="@drawable/ic_star"
+            android:drawablePadding="10sp"
+            android:drawableTint="@color/light_yellow"
+            android:text="Rating: 5 stars"
+            android:textColor="@color/dark_800"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
